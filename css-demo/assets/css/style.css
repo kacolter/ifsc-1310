@@ -1,5 +1,13 @@
 /* CSS Demo Stylesheet */
-
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  /* global styles and CSS box model*/
 body{
     background-color:lemonchiffon;
     font-family: "Quicksand", sans-serif;
