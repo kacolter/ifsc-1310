@@ -12,3 +12,7 @@ body{
     background-color:lemonchiffon;
     font-family: "Quicksand", sans-serif;
 }
+
+header.primary{
+    background:rgb(171, 106, 145);
+}
