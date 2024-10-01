@@ -9,10 +9,49 @@ html {
   }
   /* global styles and CSS box model*/
 body{
-    background-color:lemonchiffon;
+    background-color: #CAA9BA;
     font-family: "Quicksand", sans-serif;
+    margin:0;
 }
 
 header.primary{
-    background:rgb(171, 106, 145);
+    background: #F5A4CE;
+    color:black;
+    text shadow: 2px 2px #000000;
+    /*long form*/
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px; 
+    /*Single value short hand*/
+    padding: 40px;
+    /* T,R,B,L */
+    padding: 20px 40px 20px 40px;
+    /* Two Value Top/Bottom / L/R */
+    padding: 20px 40px;
+    text-align:center;    
 }
+
+header.primary h1{
+  font-size: 2.4rem;
+  margin:20px 0 0 0;
+}
+
+header.primary h1 a {
+  color:black;
+  text decoration:none;
+}
+
+header.primary h2{
+  font-size:1.4rem;
+  margin:0;
+}
+/* could've said "header.primary nav" */
+nav.primary{}
+nav.primary ul{
+  display:flex;
+  flex direction:row;
+  justify content:space-around
+}
+nav.primary ul li{}
+nav.primary ul li a{}
