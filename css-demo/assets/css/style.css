@@ -50,8 +50,22 @@ header.primary h2{
 nav.primary{}
 nav.primary ul{
   display:flex;
-  flex direction:row;
-  justify content:space-around
+  flex-direction:row;
+  justify content:space-around;
 }
-nav.primary ul li{}
-nav.primary ul li a{}
+nav.primary ul li{
+  list style type:none;
+}
+nav.primary ul li a{
+  color:black;
+  text-decoration:none;
+  border: 1px solid #CAA9BA;
+  padding: 7.5px 10px;
+  border-radius:20px;
+  background-color: rgba(0,0,0, .4);
+  transition: 0.4s;
+}
+
+nav.primary ul li a:hover{
+  background-color: rgba(0,0,0, .4);
+}
