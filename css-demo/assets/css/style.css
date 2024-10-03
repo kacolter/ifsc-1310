@@ -1,4 +1,5 @@
 /* CSS Demo Stylesheet */
+/*----Box sizing----*/
 html {
     box-sizing: border-box;
   }
@@ -7,6 +8,20 @@ html {
   *:after {
     box-sizing: inherit;
   }
+  /*-----Responsive Images----*/
+
+img{
+  max-width:100%;
+}
+
+  /*-----Utility-----*/
+  .container{
+    width: 80vw;
+    max width:960px;
+    margin: 40px auto;
+  }
+  /*--------------viewport width=vw-----------------*/
+
   /* global styles and CSS box model*/
 body{
     background-color: #CAA9BA;
@@ -47,7 +62,10 @@ header.primary h2{
   margin:0;
 }
 /* could've said "header.primary nav" */
-nav.primary{}
+nav.primary{
+  max width:960px;
+  margin auto;
+}
 nav.primary ul{
   display:flex;
   flex-direction:row;
@@ -68,4 +86,45 @@ nav.primary ul li a{
 
 nav.primary ul li a:hover{
   background-color: rgba(0,0,0, .4);
+}
+
+@media screen and (max-width:600px){
+  
+nav.primary ul{
+flex-direction:column;
+gap: 10px;
+max width: 250px;
+margin:20px auto;
+} 
+
+nav.primary ul a{
+  display:block;
+}
+
+#intro h2{
+  color: #F5A4CE;
+  border-bottom: 1px dotted #F5A4CE;
+}
+
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  gap:2rem;
+}
+
+#content article.post{
+  box-shadow: 0 4px 8px rgba(0,0,0,.6);
+  padding:10px;
+  border-radius:4px;
+  font-size:.8rem;
+}
+
+time.post-date, figcaption{
+  text-transform:uppercase;
+  color:#ccc;
+}
+
+#content article.post figure{
+  margin:0;
 }
