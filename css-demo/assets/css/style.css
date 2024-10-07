@@ -1,109 +1,101 @@
-/* CSS Demo Stylesheet */
-/*----Box sizing----*/
+/*  ---------------Box Sizing-----------------  */
+
 html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  /*-----Responsive Images----*/
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*  ---------------Responsive Images-----------------  */
 
 img{
   max-width:100%;
 }
 
-  /*-----Utility-----*/
-  .container{
-    width: 80vw;
-    max width:960px;
-    margin: 40px auto;
-  }
-  /*--------------viewport width=vw-----------------*/
+/*  ---------------Utility Classes-----------------  */
 
-  /* global styles and CSS box model*/
-body{
-    background-color: #CAA9BA;
-    font-family: "Quicksand", sans-serif;
-    margin:0;
+.container{
+  width: 80vw;
+  max-width:960px;
+  margin: 40px auto; 
 }
 
-header.primary{
-    background: #F5A4CE;
-    color:black;
-    text shadow: 2px 2px #000000;
-    /*long form*/
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px; 
-    /*Single value short hand*/
-    padding: 40px;
-    /* T,R,B,L */
-    padding: 20px 40px 20px 40px;
-    /* Two Value Top/Bottom / L/R */
-    padding: 20px 40px;
-    text-align:center;    
+/*  ---------------Global Styles-----------------  */
+body {
+  font-family: "Quicksand", sans-serif;
+  margin:0; 
+}
+
+header.primary {
+background-color: #CAA9BA;
+color:#ffffff;
+text-shadow: 1px 1px #000000; 
+/*long form*/
+padding-top: 40px;
+padding-right: 40px;
+padding-bottom: 40px;
+padding-left: 40px;  
+/*Single value short hand*/
+padding: 40px;
+/* T,R,B,L */
+padding: 20px 40px 20px 40px; 
+/* Two Value Top/Bottom / L/R */
+padding: 20px 40px;
+text-align:center;  
 }
 
 header.primary h1{
   font-size: 2.4rem;
-  margin:20px 0 0 0;
+  margin:20px 0 0;
 }
 
 header.primary h1 a {
-  color:black;
-  text decoration:none;
+  color:#ffffff;
+  text-decoration:none;
 }
 
 header.primary h2{
   font-size:1.4rem;
   margin:0;
 }
-/* could've said "header.primary nav" */
+
 nav.primary{
-  max width:960px;
-  margin auto;
+  max-width:960px;
+  margin:auto;
 }
 nav.primary ul{
+  padding:10px 0 0 0;
   display:flex;
   flex-direction:row;
-  justify content:space-around;
+  justify-content:space-around;
 }
 nav.primary ul li{
-  list style type:none;
+  list-style-type:none;
 }
 nav.primary ul li a{
-  color:black;
-  text-decoration:none;
-  border: 1px solid #CAA9BA;
-  padding: 7.5px 10px;
-  border-radius:20px;
-  background-color: rgba(0,0,0, .4);
-  transition: 0.4s;
+color:#ffffff;
+text-decoration:none;
+border: 1px solid #A07F90;
+padding: 7.5px 10px;
+border-radius:20px; 
+background-color: rgba(0,0,0,.4);
+transition: .4s;  
 }
 
 nav.primary ul li a:hover{
-  background-color: rgba(0,0,0, .4);
+  background-color: rgba(0,0,0,.8);
 }
 
-@media screen and (max-width:600px){
-  
-nav.primary ul{
-flex-direction:column;
-gap: 10px;
-max width: 250px;
-margin:20px auto;
-} 
-
-nav.primary ul a{
-  display:block;
+#intro {
+  line-height:1.6;
 }
 
 #intro h2{
-  color: #F5A4CE;
-  border-bottom: 1px dotted #F5A4CE;
+  color: #754A60;
+  border-bottom: 1px dotted #CAA9BA;
 }
 
 #content{
@@ -125,6 +117,28 @@ time.post-date, figcaption{
   color:#ccc;
 }
 
+#content a {
+  color: #754A60;
+}
+
 #content article.post figure{
   margin:0;
+}
+
+
+/* --------- Media Queries ----------- */
+
+@media screen and (max-width:600px){
+  
+nav.primary ul{
+  flex-direction:column;
+  gap:10px;
+  max-width: 250px;
+  margin:10px auto;
+} 
+
+  nav.primary ul a{
+    display:block;
+  }  
+  
 }
