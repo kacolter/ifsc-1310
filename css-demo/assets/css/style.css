@@ -23,6 +23,30 @@ img{
   margin: 40px auto; 
 }
 
+.img-right{
+  float:right;
+  margin:10px 0 10px 20px;
+  border:1px solid #754A60;
+  padding:5px; 
+  border-radius:50px 20px;
+}
+
+.img-left{
+  float:left;
+  margin:10px 20px 10px 0px;
+  border:1px solid #754A60;
+  padding:5px; 
+  border-radius:50px 20px;
+}
+
+.img-center{
+  display:block;
+  margin:20px auto;
+  border:1px solid #754A60;
+  padding:5px; 
+  border-radius:50px 20px;
+}
+
 /*  ---------------Global Styles-----------------  */
 body {
   font-family: "Quicksand", sans-serif;
@@ -135,9 +159,63 @@ time.post-date, figcaption{
   margin:0;
 }
 
+#practice h2{
+  color:#754A60;
+  border-bottom: 1px dotted #CAA9BA;
+}
+
+#practice a{
+  color:#754A60;
+}
+
+#practice a:hover{
+  text-decoration:none;
+}
+
+#practice h3{
+  border-left:8px solid #caa9ba;
+  padding:7.5px 0 7.5px 10px;
+}
+
+table{
+  width:100%;
+  border:1px solid #754A60;
+  margin:20px 0;
+  border-collapse:collapse;
+}
+
+caption{
+  font-weight:bold;
+  margin:10px;
+}
+
+th{
+  background-color:#CAA9BA;
+  color:#000000;
+  padding:7.5px;
+}
+
+tr:nth-child(even){
+  background-color:rgba(158, 51, 115, 0.4);
+}
+  
+tr:hover{
+  background-color:rgba(154, 61, 117, 0.312);
+}
+
+
+td{
+  border:1px solid #754A60;
+  padding:5px;
+}
+
+td:nth-child(n + 2){
+  text-align:right;
+}
+
 aside[role="complementary"]{
   background-color:#754A60;
-  color:black
+  color:black;
   padding:40px 0;
 }
 
