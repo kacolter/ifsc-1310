@@ -237,6 +237,92 @@ margin-top: 25px;
 
 /* faq */
 
+.faq-container {
+  text-align: left;
+  margin: 10px auto 30px auto;
+  position: relative;
+}
+.faq-container article p { margin: 10px 15px 15px 15px; }
+.faq-container input[type=checkbox],
+.faq-container input[type=radio] {
+  background-color: transparent;
+  border: 1px solid transparent;
+  height: 1px;
+  position: absolute;
+  width: 1px;
+  margin: 4px 0 0 0;
+  outline: none;
+}
+.faq-container input[type=checkbox] + label {
+  background: #F5F3E7;
+  border-bottom: 1px solid transparent;
+  color: #123456;
+  cursor: pointer;
+  display: block;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 32px;
+  padding: 10px 15px;
+  position: relative;
+  z-index: 20;
+}
+.faq-container input[type=checkbox] + label:before,
+.faq-container input[type=checkbox] + label:after{
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+}
+.faq-container input[type=checkbox] + label:before{
+  content: "\f29c";
+  padding-right: 10px;
+}
+.faq-container input[type=checkbox] + label:after{
+  content: "\f054";
+  float: right;
+  padding-left: 10px;
+}
+.faq-container input[type=checkbox] + label:hover{ background: #8FABEA; }
+.faq-container input[type=checkbox]:checked + label,
+.faq-container input[type=radio]:checked + label { background: #8FABEA; }
+.faq-container input[type=checkbox]:focus + label,
+.faq-container input[type=radio]:focus + label { background: #8FABEA; }
+.faq-container input[type=checkbox]:checked + label:hover,
+.faq-container input[type=radio]:checked + label:hover { background: #8FABEA; }
+.faq-container input[type=checkbox]:checked + label:after,
+.faq-container input[type=radio]:checked + label:after {
+	-webkit-transform: rotate(90deg);
+	   -moz-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	     -o-transform: rotate(90deg);
+	        transform: rotate(90deg);
+}
+.faq-container input[type=checkbox] + label + article,
+.faq-container input[type=radio] + label + article {
+  display: none;
+  height: 0;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  -ms-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+.faq-container input[type=checkbox]:checked + label + article,
+.faq-container input[type=radio]:checked + label + article {
+  display: block;
+  height: auto;
+  max-height: 2000px;
+  -webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  -ms-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
 /*contact us */
 
 /* utility classes */
