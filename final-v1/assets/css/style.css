@@ -97,7 +97,6 @@ section#intro article.heading {
   box-shadow: 5px 5px #272F40;
   padding: 25px;
   width: 50%;
-  height: 450px;
   float: left;
   border-bottom: 3px solid #8FABEA;
   border-top: 3px solid #8FABEA;
@@ -110,7 +109,6 @@ section#intro article.overview {
   box-shadow: 5px 5px #272F40;
   padding: 25px;
   width: 50%;
-  height: 450px;
   float: left;
   border-bottom: 3px solid #8FABEA;
   border-top: 3px solid #8FABEA;
@@ -158,6 +156,13 @@ footer.primary {
   justify-content: center;
   border-top:3px solid #8FABEA;
 }
+
+  /* utility classes */
+  #content{
+    width: 90vw;
+    max-width:1000px;
+    margin: 25px auto; 
+  }
 
 
 
