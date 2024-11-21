@@ -1,7 +1,3 @@
-body{
-    background-color:darkgray;
-}
-
 img{
     max-width:100%;
 }
@@ -19,7 +15,7 @@ img{
 .slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
 .slick-dots li button .slick-dot-icon,
 .slick-dots li.slick-active button .slick-dot-icon {
-  color: white;
+  color: #F5F3E7;
 }
 
 /* Customize Previous/Next/Dots/Autoplay - Active State */
@@ -32,5 +28,5 @@ img{
 .slick-dots li.slick-active button:focus .slick-dot-icon,
 .slick-autoplay-toggle-button:focus 
 {
-    color:black;
+    color:#8FABEA;
 }
