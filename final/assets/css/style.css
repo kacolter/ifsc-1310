@@ -383,8 +383,39 @@ margin-top: 25px;
   transition: all 1.5s ease-in-out;
 }
 
-/*contact us */
+/*js */
+img{
+  max-width:100%;
+}
 
+#contact.container.slick{
+  margin:40px auto;
+  width:70vw;
+  /* Set Max Content Width */
+  max-width:700px;
+}
+
+/* Customize Previous/Next/Dots/Autoplay */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+color: #F5F3E7;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+  color:#8FABEA;
+}
 /* utility classes */
 #content{
   width: 90vw;
