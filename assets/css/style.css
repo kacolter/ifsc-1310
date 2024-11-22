@@ -1,3 +1,69 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+  
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 body{
-    background-color:lightpink;
+    background-color: #502038;
+    font-family: "EB Garamond", serif;
+    height: 100%;
+    margin: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23a5798f' fill-opacity='0.4' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+h1{
+    color: #FAB6D8;
+    font-size: 2.0rem;
+    text-align: center;
+    border-bottom: 3px solid #FAB6D8;
+    padding: 8.5px 0 5.5px 9px;
+}
+h2{
+    color: #FAB6D8;
+    border-left: 9px solid #FAB6D8;
+    padding: 8.5px 0 5.5px 9px;
+
+}
+
+.container{
+    padding: 25px;
+}
+
+a:link{
+    color: #CFBAC5;
+    text-decoration: none;
+}
+a:visited{
+    color:#CFBAC5;
+}
+
+li{
+    color:#CFBAC5;
+    font-size: 1.2rem;
+}
+
+p{
+    border-top: 2px solid #FAB6D8;
+    padding: 8.5px 0 5.5px 9px;
+    color: #CFBAC5;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+footer.primary{
+    background: #330C20;
+    height: 100px;
+    width:100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    justify-content: center;
+    border-top:3px solid #7A4660;
+    color: #A5798F;
+    
 }
