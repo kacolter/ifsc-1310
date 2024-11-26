@@ -15,7 +15,7 @@ img{
 .slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
 .slick-dots li button .slick-dot-icon,
 .slick-dots li.slick-active button .slick-dot-icon {
-  color: #F5F3E7;
+  color: black;
 }
 
 /* Customize Previous/Next/Dots/Autoplay - Active State */

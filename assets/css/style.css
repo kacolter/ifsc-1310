@@ -25,6 +25,7 @@ h1{
 }
 h2{
     color: #FAB6D8;
+    border-bottom: 2px solid #FAB6D8;
     border-left: 9px solid #FAB6D8;
     padding: 8.5px 0 5.5px 9px;
 
@@ -48,7 +49,6 @@ li{
 }
 
 p{
-    border-top: 2px solid #FAB6D8;
     padding: 8.5px 0 5.5px 9px;
     color: #CFBAC5;
     font-weight: 500;
